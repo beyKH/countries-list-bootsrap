@@ -28,12 +28,22 @@ body{
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
 
 }
+a{
+  color: var(--text-color);
+}
+a:hover{
+  opacity: 0.8;
+}
+
+a:active{
+  opacity: 0.6;
+}
 
 .site-header__heading{
   white-space: nowrap;
 }
 
-.dark-mode__btn{
+.dark-mode-btn {
   display: flex;
   align-items: center;
   color: var(--text-color);
@@ -47,7 +57,7 @@ body{
 }
 
 
-.dark-mode__btn::before {
+.dark-mode-btn::before {
   content: '';
   display: block;
   margin-right: 5px;
@@ -60,6 +70,23 @@ body{
   flex-shrink: 0;
 }
 
+.index-form__search{
+  display: inline-block;
+  width: 300px;
+
+}
+
+.index-form__select {
+  display: inline-block;
+  width: 200px;
+
+}
+
+/* FORM */
+
+.index-form__search{
+  margin-right: 40px;
+}
 
 /* COUNTRIES LIST */
 
@@ -85,6 +112,10 @@ body{
   line-height: 16px;
 }
 
+.country__inner span{
+  font-weight: 400;
+}
+
 .country__name {
   font-weight: 800;
   font-size: 18px;
@@ -92,6 +123,17 @@ body{
 
 }
 
+@media only screen and (max-width: 700px){
+    .index-form__search{
+      margin-right: 0;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+
+    .index-form__select{
+      width: 100%;
+    }
+}
 
 @media only screen and (max-width: 576px) {
 
@@ -109,6 +151,7 @@ body{
 
 
 }
+
 
 
 @media only screen and (max-width: 500px) {

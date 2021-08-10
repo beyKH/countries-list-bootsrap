@@ -1,4 +1,4 @@
-var elDarkModeBtn = document.querySelector(".dark-mode__btn");
+var elDarkModeBtn = document.querySelector(".dark-mode-btn");
 var elBody = document.querySelector(".body");
 
 elDarkModeBtn.addEventListener("click", function() {
