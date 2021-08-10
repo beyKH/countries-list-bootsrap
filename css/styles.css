@@ -73,7 +73,12 @@ a:active{
 .index-form__search{
   display: inline-block;
   width: 300px;
+}
 
+.index-form__search::before{
+  width: 18px;
+  height: 1;
+  background-image: url("");
 }
 
 .index-form__select {
