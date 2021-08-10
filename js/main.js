@@ -1,3 +1,4 @@
+alert("Dark Mode is working")
 var elDarkModeBtn = document.querySelector(".dark-mode-btn");
 var elBody = document.querySelector(".body");
 
@@ -12,3 +13,5 @@ winSize.addEventListener("resize", function name(params) {
   elDarkModeBtn.textContent = "";
 
 })
+
+
