@@ -71,14 +71,20 @@ a:active{
 }
 
 .index-form__search{
-  display: inline-block;
+  display: inline-flex;
   width: 300px;
+  align-items: center;
+
 }
 
 .index-form__search::before{
+  content: '';
   width: 18px;
-  height: 1;
-  background-image: url("");
+  height: 18px;
+  display: block;
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .index-form__select {
