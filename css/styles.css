@@ -47,6 +47,7 @@ a:active{
   display: flex;
   align-items: center;
   color: var(--text-color);
+  white-space: nowrap;
 }
 
 
@@ -68,6 +69,7 @@ a:active{
   background-size: contain;
   background-repeat: no-repeat;
   flex-shrink: 0;
+  object-fit: cover;
 }
 
 .index-form__search{
@@ -149,8 +151,8 @@ a:active{
 @media only screen and (max-width: 576px) {
 
   .container{
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 120px;
+    padding-right: 120px;
   }
 
   .site-header__heading{
@@ -165,10 +167,26 @@ a:active{
 
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 540px) {
 
   .container {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
